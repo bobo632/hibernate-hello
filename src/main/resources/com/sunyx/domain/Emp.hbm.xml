@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.sunyx.domain.Emp" table="t_emp">
+        <id name="id" column="id">
+            <generator class="sequence">
+                <param name="sequence">emp_seq</param>
+            </generator>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="age" column="age" type="integer"/>
+        <property name="birthday" column="birthday" type="date"/>
+        <property name="marry" column="marry" type="yes_no"/>
+        <property name="login" column="login" type="timestamp"/>
+        <property name="salary" column="salary" type="double"/>
+    </class>
+</hibernate-mapping>

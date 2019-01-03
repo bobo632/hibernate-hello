@@ -1,0 +1,1031 @@
+17:36:01,098  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+17:36:01,110  INFO Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+17:36:01,113  INFO Environment:224 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=ucr_param, hibernate.connection.password=****, format_sql=true, hibernate.dialect=org.hibernate.dialect.OracleDialect, hibernate.connection.url=jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, show_sql=true, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=oracle.jdbc.OracleDriver}
+17:36:01,114  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+17:36:01,142  INFO Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+17:36:01,144  INFO Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+17:36:01,206  INFO Configuration:759 - HHH000221: Reading mappings from resource: com/sunyx/domain/Emp.hbm.xml
+17:36:01,259  INFO Configuration:2216 - HHH000041: Configured SessionFactory: null
+17:36:01,352  INFO ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.c3p0.internal.C3P0ConnectionProvider
+17:36:01,362  INFO C3P0ConnectionProvider:134 - HHH010002: C3P0 using driver: oracle.jdbc.OracleDriver at URL: jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1
+17:36:01,363  INFO C3P0ConnectionProvider:135 - HHH000046: Connection properties: {user=ucr_param, password=****}
+17:36:01,363  INFO C3P0ConnectionProvider:138 - HHH000006: Autocommit mode: false
+17:36:01,395  INFO MLog:212 - MLog clients using slf4j logging.
+17:36:01,586  INFO C3P0Registry:212 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+17:36:01,673  INFO AbstractPoolBackedDataSource:212 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e7b08e6 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e6ae32a4 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 2xhtt2a03v1gnx1qhm23q|42845bde, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@3430c5e8 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 2xhtt2a03v1gnx1qhm23q|31ea813d, jdbcUrl -> jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 2xhtt2a03v1gnx1qhm23q|6fc8ae85, numHelperThreads -> 3 ]
+17:36:02,013  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+17:36:02,019  WARN Oracle9Dialect:70 - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+17:36:02,021  WARN OracleDialect:56 - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+17:36:02,023  INFO LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:36:02,081  INFO TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17:36:02,085  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+17:37:09,373 DEBUG logging:194 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+17:37:09,397 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@56f3d4c3
+17:37:09,398 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@56f3d4c3
+17:37:09,398 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@56f3d4c3
+17:37:09,399 DEBUG BasicTypeRegistry:146 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@3663698
+17:37:09,402 DEBUG BasicTypeRegistry:146 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6b4ceb0d
+17:37:09,403 DEBUG BasicTypeRegistry:146 - Adding type registration yes_no -> org.hibernate.type.YesNoType@1d94ccbc
+17:37:09,406 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@e5edefc
+17:37:09,407 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@e5edefc
+17:37:09,407 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@e5edefc
+17:37:09,409 DEBUG BasicTypeRegistry:146 - Adding type registration character -> org.hibernate.type.CharacterType@2416cef9
+17:37:09,410 DEBUG BasicTypeRegistry:146 - Adding type registration char -> org.hibernate.type.CharacterType@2416cef9
+17:37:09,410 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2416cef9
+17:37:09,413 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@5e9c8834
+17:37:09,413 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@5e9c8834
+17:37:09,413 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5e9c8834
+17:37:09,416 DEBUG BasicTypeRegistry:146 - Adding type registration integer -> org.hibernate.type.IntegerType@1326d2fe
+17:37:09,416 DEBUG BasicTypeRegistry:146 - Adding type registration int -> org.hibernate.type.IntegerType@1326d2fe
+17:37:09,417 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1326d2fe
+17:37:09,419 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@432dbb4b
+17:37:09,420 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@432dbb4b
+17:37:09,420 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@432dbb4b
+17:37:09,422 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@34dea091
+17:37:09,423 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@34dea091
+17:37:09,424 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@34dea091
+17:37:09,427 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@5c77399e
+17:37:09,427 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@5c77399e
+17:37:09,428 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5c77399e
+17:37:09,430 DEBUG BasicTypeRegistry:146 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@678277bc
+17:37:09,430 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@678277bc
+17:37:09,432 DEBUG BasicTypeRegistry:146 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@76f6805b
+17:37:09,432 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@76f6805b
+17:37:09,435 DEBUG BasicTypeRegistry:146 - Adding type registration string -> org.hibernate.type.StringType@67808ae8
+17:37:09,435 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.String -> org.hibernate.type.StringType@67808ae8
+17:37:09,436 DEBUG BasicTypeRegistry:146 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@59fc4d
+17:37:09,437 DEBUG BasicTypeRegistry:146 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6faa3306
+17:37:09,439 DEBUG BasicTypeRegistry:146 - Adding type registration url -> org.hibernate.type.UrlType@c2e42fe
+17:37:09,440 DEBUG BasicTypeRegistry:146 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@c2e42fe
+17:37:09,444 DEBUG BasicTypeRegistry:146 - Adding type registration date -> org.hibernate.type.DateType@1a18b622
+17:37:09,445 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1a18b622
+17:37:09,448 DEBUG BasicTypeRegistry:146 - Adding type registration time -> org.hibernate.type.TimeType@34a602e7
+17:37:09,449 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@34a602e7
+17:37:09,452 DEBUG BasicTypeRegistry:146 - Adding type registration timestamp -> org.hibernate.type.TimestampType@fea9776
+17:37:09,452 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@fea9776
+17:37:09,453 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@fea9776
+17:37:09,455 DEBUG BasicTypeRegistry:146 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4ef259d6
+17:37:09,458 DEBUG BasicTypeRegistry:146 - Adding type registration calendar -> org.hibernate.type.CalendarType@4aa0a82c
+17:37:09,459 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4aa0a82c
+17:37:09,460 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4aa0a82c
+17:37:09,461 DEBUG BasicTypeRegistry:146 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@479401b1
+17:37:09,463 DEBUG BasicTypeRegistry:146 - Adding type registration locale -> org.hibernate.type.LocaleType@7a9d6b8e
+17:37:09,464 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7a9d6b8e
+17:37:09,466 DEBUG BasicTypeRegistry:146 - Adding type registration currency -> org.hibernate.type.CurrencyType@7d7cd6ad
+17:37:09,467 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@7d7cd6ad
+17:37:09,469 DEBUG BasicTypeRegistry:146 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@328ae1fb
+17:37:09,470 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@328ae1fb
+17:37:09,472 DEBUG BasicTypeRegistry:146 - Adding type registration class -> org.hibernate.type.ClassType@1cd65428
+17:37:09,472 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1cd65428
+17:37:09,474 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1cd6758a
+17:37:09,475 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1cd6758a
+17:37:09,476 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@53330681
+17:37:09,477 DEBUG BasicTypeRegistry:146 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@225c6110
+17:37:09,478 DEBUG BasicTypeRegistry:146 - Adding type registration binary -> org.hibernate.type.BinaryType@c2567a6
+17:37:09,479 DEBUG BasicTypeRegistry:146 - Adding type registration byte[] -> org.hibernate.type.BinaryType@c2567a6
+17:37:09,480 DEBUG BasicTypeRegistry:146 - Adding type registration [B -> org.hibernate.type.BinaryType@c2567a6
+17:37:09,482 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@276ac534
+17:37:09,482 DEBUG BasicTypeRegistry:146 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@276ac534
+17:37:09,484 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@276ac534
+17:37:09,486 DEBUG BasicTypeRegistry:146 - Adding type registration image -> org.hibernate.type.ImageType@4211cbb5
+17:37:09,486 DEBUG BasicTypeRegistry:146 - Adding type registration characters -> org.hibernate.type.CharArrayType@6e95b0a3
+17:37:09,487 DEBUG BasicTypeRegistry:146 - Adding type registration char[] -> org.hibernate.type.CharArrayType@6e95b0a3
+17:37:09,488 DEBUG BasicTypeRegistry:146 - Adding type registration [C -> org.hibernate.type.CharArrayType@6e95b0a3
+17:37:09,489 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@57e2eb9
+17:37:09,490 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@57e2eb9
+17:37:09,490 DEBUG BasicTypeRegistry:146 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@57e2eb9
+17:37:09,491 DEBUG BasicTypeRegistry:146 - Adding type registration text -> org.hibernate.type.TextType@12554af0
+17:37:09,492 DEBUG BasicTypeRegistry:146 - Adding type registration ntext -> org.hibernate.type.NTextType@7bb613c0
+17:37:09,498 DEBUG BasicTypeRegistry:146 - Adding type registration blob -> org.hibernate.type.BlobType@73d2e04b
+17:37:09,498 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@73d2e04b
+17:37:09,499 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@277b8705
+17:37:09,509 DEBUG BasicTypeRegistry:146 - Adding type registration clob -> org.hibernate.type.ClobType@4f3cd6
+17:37:09,509 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4f3cd6
+17:37:09,515 DEBUG BasicTypeRegistry:146 - Adding type registration nclob -> org.hibernate.type.NClobType@6359877c
+17:37:09,516 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6359877c
+17:37:09,517 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6fa97a7
+17:37:09,518 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@14583a4e
+17:37:09,520 DEBUG BasicTypeRegistry:146 - Adding type registration serializable -> org.hibernate.type.SerializableType@15e1e22b
+17:37:09,525 DEBUG BasicTypeRegistry:146 - Adding type registration object -> org.hibernate.type.ObjectType@471bdb5c
+17:37:09,525 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@471bdb5c
+17:37:09,526 DEBUG BasicTypeRegistry:146 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@60356eb0
+17:37:09,526 DEBUG BasicTypeRegistry:146 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@53f61628
+17:37:09,527 DEBUG BasicTypeRegistry:146 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4128c728
+17:37:09,527 DEBUG BasicTypeRegistry:146 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@5c2b3483
+17:37:09,528 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1884b3bb
+17:37:09,528 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3033c690
+17:37:09,529 DEBUG BasicTypeRegistry:146 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@173130a9
+17:37:09,530 DEBUG BasicTypeRegistry:146 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1e71b324
+17:37:09,550  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+17:37:09,563  INFO Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+17:37:09,566  INFO Environment:224 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=ucr_param, hibernate.connection.password=****, format_sql=true, hibernate.dialect=org.hibernate.dialect.OracleDialect, hibernate.connection.url=jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, show_sql=true, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=oracle.jdbc.OracleDriver}
+17:37:09,572  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+17:37:09,585 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+17:37:09,586 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+17:37:09,587 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+17:37:09,588 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+17:37:09,590 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+17:37:09,591 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+17:37:09,592 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+17:37:09,594 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+17:37:09,595 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+17:37:09,595 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+17:37:09,597 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+17:37:09,597 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+17:37:09,598 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+17:37:09,599 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+17:37:09,600 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+17:37:09,604  INFO Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+17:37:09,604  INFO Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+17:37:09,648 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+17:37:09,648 DEBUG DTDEntityResolver:71 - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+17:37:09,650 DEBUG DTDEntityResolver:108 - Located [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd] in classpath
+17:37:09,678 DEBUG Configuration:2037 - hibernate.connection.driver_class=oracle.jdbc.OracleDriver
+17:37:09,679 DEBUG Configuration:2037 - hibernate.connection.url=jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1
+17:37:09,679 DEBUG Configuration:2037 - hibernate.connection.username=ucr_param
+17:37:09,680 DEBUG Configuration:2037 - hibernate.connection.password=1qazwsxparam
+17:37:09,680 DEBUG Configuration:2037 - connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider
+17:37:09,680 DEBUG Configuration:2037 - c3p0.max_size=20
+17:37:09,681 DEBUG Configuration:2037 - c3p0.min_size=5
+17:37:09,681 DEBUG Configuration:2037 - c3p0.timeout=120
+17:37:09,682 DEBUG Configuration:2037 - c3p0.idle_test_period=3000
+17:37:09,682 DEBUG Configuration:2037 - hibernate.dialect=org.hibernate.dialect.OracleDialect
+17:37:09,683 DEBUG Configuration:2037 - show_sql=true
+17:37:09,683 DEBUG Configuration:2037 - format_sql=true
+17:37:09,683 DEBUG Configuration:2256 - Session-factory config [null] named resource [com/sunyx/domain/Emp.hbm.xml] for mapping
+17:37:09,683  INFO Configuration:759 - HHH000221: Reading mappings from resource: com/sunyx/domain/Emp.hbm.xml
+17:37:09,705 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+17:37:09,706 DEBUG DTDEntityResolver:71 - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+17:37:09,707 DEBUG DTDEntityResolver:108 - Located [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd] in classpath
+17:37:09,736  INFO Configuration:2216 - HHH000041: Configured SessionFactory: null
+17:37:09,736 DEBUG Configuration:2217 - Properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, c3p0.min_size=5, os.name=Windows 8.1, sun.boot.class.path=D:\program\java\jdk1.7.0_80\jre\lib\resources.jar;D:\program\java\jdk1.7.0_80\jre\lib\rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\sunrsasign.jar;D:\program\java\jdk1.7.0_80\jre\lib\jsse.jar;D:\program\java\jdk1.7.0_80\jre\lib\jce.jar;D:\program\java\jdk1.7.0_80\jre\lib\charsets.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfr.jar;D:\program\java\jdk1.7.0_80\jre\classes, sun.desktop=windows, hibernate.c3p0.max_size=20, java.vm.specification.vendor=Oracle Corporation, c3p0.max_size=20, java.runtime.version=1.7.0_80-b15, hibernate.c3p0.min_size=5, user.name=liuli, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\bin, hibernate.c3p0.timeout=120, user.language=zh, sun.boot.library.path=D:\program\java\jdk1.7.0_80\jre\bin, java.version=1.7.0_80, user.timezone=Asia/Shanghai, sun.arch.data.model=64, java.endorsed.dirs=D:\program\java\jdk1.7.0_80\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=GBK, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=51.0, user.country=CN, java.home=D:\program\java\jdk1.7.0_80\jre, java.vm.info=mixed mode, os.version=6.3, c3p0.idle_test_period=3000, path.separator=;, java.vm.version=24.80-b11, hibernate.connection.password=1qazwsxparam, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=ucr_param, user.script=, user.home=C:\Users\liuli, java.specification.vendor=Oracle Corporation, java.library.path=D:\program\java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;f:\app\liuli\product\11.2.0\client_3\bin;G:\app\liuli\product\11.2.0\client_3\bin;F:\app\liuli\product\11.2.0\client_2\bin;F:\app\liuli\product\11.2.0\client_1;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\program\java\jdk1.7.0_80\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\VanDyke Software\Clients\;D:\software\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;D:\program\Git\cmd;C:\Users\liuli\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=oracle.jdbc.OracleDriver, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.OracleDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 Test,test1, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\plugins\junit\lib\junit-rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\charsets.jar;D:\program\java\jdk1.7.0_80\jre\lib\deploy.jar;D:\program\java\jdk1.7.0_80\jre\lib\javaws.jar;D:\program\java\jdk1.7.0_80\jre\lib\jce.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfr.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfxrt.jar;D:\program\java\jdk1.7.0_80\jre\lib\jsse.jar;D:\program\java\jdk1.7.0_80\jre\lib\management-agent.jar;D:\program\java\jdk1.7.0_80\jre\lib\plugin.jar;D:\program\java\jdk1.7.0_80\jre\lib\resources.jar;D:\program\java\jdk1.7.0_80\jre\lib\rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\access-bridge-64.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\dnsns.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\jaccess.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\localedata.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunec.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunjce_provider.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunmscapi.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\zipfs.jar;F:\code\hibernate\hibernate-hello\target\test-classes;F:\code\hibernate\hibernate-hello\target\classes;F:\maven\localRepository\org\hibernate\hibernate-core\4.3.11.Final\hibernate-core-4.3.11.Final.jar;F:\maven\localRepository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;F:\maven\localRepository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;F:\maven\localRepository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;F:\maven\localRepository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;F:\maven\localRepository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;F:\maven\localRepository\org\hibernate\common\hibernate-commons-annotations\4.0.5.Final\hibernate-commons-annotations-4.0.5.Final.jar;F:\maven\localRepository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;F:\maven\localRepository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;F:\maven\localRepository\antlr\antlr\2.7.7\antlr-2.7.7.jar;F:\maven\localRepository\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar;F:\maven\localRepository\com\oracle\ojdbc14\0.0.1\ojdbc14-0.0.1.jar;F:\maven\localRepository\junit\junit\4.8.2\junit-4.8.2.jar;F:\maven\localRepository\log4j\log4j\1.2.17\log4j-1.2.17.jar;F:\maven\localRepository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;F:\maven\localRepository\org\slf4j\slf4j-log4j12\1.7.7\slf4j-log4j12-1.7.7.jar;F:\maven\localRepository\org\hibernate\hibernate-c3p0\4.3.11.Final\hibernate-c3p0-4.3.11.Final.jar;F:\maven\localRepository\com\mchange\c3p0\0.9.5.2\c3p0-0.9.5.2.jar;F:\maven\localRepository\com\mchange\mchange-commons-java\0.2.11\mchange-commons-java-0.2.11.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7536, c3p0.timeout=120, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider, sun.os.patch.level=, hibernate.connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider, java.io.tmpdir=C:\Users\liuli\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=D:\program\java\jdk1.7.0_80\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=F:\code\hibernate\hibernate-hello, hibernate.c3p0.idle_test_period=3000, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, format_sql=true, java.specification.version=1.7, hibernate.show_sql=true}
+17:37:09,767 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+17:37:09,770 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+17:37:09,773 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+17:37:09,799 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+17:37:09,800 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+17:37:09,861 DEBUG ServiceBinding:85 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+17:37:09,862 DEBUG Configuration:1843 - Preparing to build session factory with filters : {}
+17:37:09,867  INFO ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.c3p0.internal.C3P0ConnectionProvider
+17:37:09,880  INFO C3P0ConnectionProvider:134 - HHH010002: C3P0 using driver: oracle.jdbc.OracleDriver at URL: jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1
+17:37:09,881  INFO C3P0ConnectionProvider:135 - HHH000046: Connection properties: {user=ucr_param, password=****}
+17:37:09,881  INFO C3P0ConnectionProvider:138 - HHH000006: Autocommit mode: false
+17:37:09,918  INFO MLog:212 - MLog clients using slf4j logging.
+17:37:09,927 DEBUG MLog:207 - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+17:37:09,928 DEBUG MLog:207 - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+17:37:09,928 DEBUG MLog:207 - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+17:37:09,929 DEBUG MLog:207 - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+17:37:09,929 DEBUG MLog:207 - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+17:37:09,932 DEBUG MConfig:207 - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+17:37:09,932 DEBUG MConfig:207 - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+17:37:09,933 DEBUG MConfig:207 - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+17:37:09,934 DEBUG MConfig:207 - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+17:37:10,128  INFO C3P0Registry:212 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+17:37:10,146 DEBUG DynamicPooledDataSourceManagerMBean:204 - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=2xhtt2a03v2xjn1goeejb|5b8e196c,name=2xhtt2a03v2xjn1goeejb|5b8e196c registered.
+17:37:10,173 DEBUG DynamicPooledDataSourceManagerMBean:204 - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=2xhtt2a03v2xjn1goeejb|5b8e196c,name=2xhtt2a03v2xjn1goeejb|5b8e196c unregistered, in order to be reregistered after update.
+17:37:10,174 DEBUG DynamicPooledDataSourceManagerMBean:204 - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=2xhtt2a03v2xjn1goeejb|5b8e196c,name=2xhtt2a03v2xjn1goeejb|5b8e196c registered.
+17:37:10,215  INFO AbstractPoolBackedDataSource:212 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@ce4ad9d9 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@f0ff07e4 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 2xhtt2a03v2xjn1goeejb|147c0def, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@9cbd9013 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 2xhtt2a03v2xjn1goeejb|27f566bc, jdbcUrl -> jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 2xhtt2a03v2xjn1goeejb|5b8e196c, numHelperThreads -> 3 ]
+17:37:10,234 DEBUG MConfig:207 - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+17:37:10,234 DEBUG MConfig:207 - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+17:37:10,235 DEBUG MConfig:207 - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+17:37:10,235 DEBUG MConfig:207 - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+17:37:10,237 DEBUG BasicResourcePool:204 - com.mchange.v2.resourcepool.BasicResourcePool@19a3f495 config: [start -> 5; min -> 5; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 3000000; max_resource_age -> 0; max_idle_time -> 120000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 30000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+17:37:10,239 DEBUG C3P0PooledConnectionPoolManager:204 - Created new pool for auth, username (masked): 'uc******'.
+17:37:10,240 DEBUG BasicResourcePool:204 - acquire test -- pool size: 0; target_pool_size: 5; desired target? 1
+17:37:10,240 DEBUG BasicResourcePool:204 - awaitAvailable(): [unknown]
+17:37:10,441 DEBUG JdbcServicesImpl:128 - Database ->
+       name : Oracle
+    version : Oracle Database 11g Release 11.1.0.0.0 - Production
+      major : 11
+      minor : 1
+17:37:10,441 DEBUG JdbcServicesImpl:139 - Driver ->
+       name : Oracle JDBC driver
+    version : 10.2.0.1.0
+      major : 10
+      minor : 2
+17:37:10,442 DEBUG JdbcServicesImpl:150 - JDBC version : 10.2
+17:37:10,443 DEBUG StandardRefCursorSupport:187 - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+17:37:10,531  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+17:37:10,537  WARN Oracle9Dialect:70 - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+17:37:10,539  WARN OracleDialect:56 - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+17:37:10,542  INFO LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:37:10,572 DEBUG Configuration:3805 - Processing hbm.xml files
+17:37:10,583 DEBUG HbmBinder:355 - Mapping class: com.sunyx.domain.Emp -> t_emp
+17:37:10,591 DEBUG HbmBinder:1374 - Mapped property: id -> id
+17:37:10,597 DEBUG HbmBinder:1374 - Mapped property: name -> name
+17:37:10,597 DEBUG HbmBinder:1374 - Mapped property: age -> age
+17:37:10,597 DEBUG HbmBinder:1374 - Mapped property: birthday -> birthday
+17:37:10,598 DEBUG HbmBinder:1374 - Mapped property: marry -> marry
+17:37:10,598 DEBUG HbmBinder:1374 - Mapped property: login -> login
+17:37:10,598 DEBUG HbmBinder:1374 - Mapped property: salary -> salary
+17:37:10,598 DEBUG Configuration:3835 - Process annotated classes
+17:37:10,600 DEBUG Configuration:1484 - Processing fk mappings (*ToOne and JoinedSubclass)
+17:37:10,600 DEBUG Configuration:1689 - Processing extends queue
+17:37:10,601 DEBUG Configuration:1747 - Processing extends queue
+17:37:10,601 DEBUG Configuration:1692 - Processing collection mappings
+17:37:10,601 DEBUG Configuration:1702 - Processing native query and ResultSetMapping mappings
+17:37:10,601 DEBUG Configuration:1710 - Processing association property references
+17:37:10,601 DEBUG Configuration:1732 - Creating tables' unique integer identifiers
+17:37:10,601 DEBUG Configuration:1733 - Processing foreign key constraints
+17:37:10,603 DEBUG JtaPlatformInitiator:59 - No JtaPlatform was specified, checking resolver
+17:37:10,603 DEBUG JtaPlatformResolverInitiator:50 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+17:37:10,606 DEBUG StandardJtaPlatformResolver:118 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:37:10,609 DEBUG SettingsFactory:122 - Automatic flush during beforeCompletion(): disabled
+17:37:10,609 DEBUG SettingsFactory:128 - Automatic session close at end of transaction: disabled
+17:37:10,610 DEBUG SettingsFactory:139 - JDBC batch size: 15
+17:37:10,610 DEBUG SettingsFactory:145 - JDBC batch updates for versioned data: disabled
+17:37:10,610 DEBUG SettingsFactory:155 - Scrollable result sets: enabled
+17:37:10,610 DEBUG SettingsFactory:161 - Wrap result sets: disabled
+17:37:10,611 DEBUG SettingsFactory:167 - JDBC3 getGeneratedKeys(): disabled
+17:37:10,611 DEBUG SettingsFactory:179 - multi-tenancy strategy : NONE
+17:37:10,611 DEBUG SettingsFactory:185 - Connection release mode: auto
+17:37:10,611  INFO TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17:37:10,614 DEBUG SettingsFactory:207 - Using BatchFetchStyle : LEGACY
+17:37:10,614 DEBUG SettingsFactory:232 - Default batch fetch size: 1
+17:37:10,615 DEBUG SettingsFactory:238 - Generate SQL with comments: disabled
+17:37:10,615 DEBUG SettingsFactory:244 - Order SQL updates by primary key: disabled
+17:37:10,615 DEBUG SettingsFactory:250 - Order SQL inserts for batching: disabled
+17:37:10,615 DEBUG SettingsFactory:258 - Default null ordering: none
+17:37:10,616 DEBUG SettingsFactory:501 - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+17:37:10,618  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+17:37:10,618 DEBUG SettingsFactory:268 - Query language substitutions: {}
+17:37:10,618 DEBUG SettingsFactory:274 - JPA-QL strict compliance: disabled
+17:37:10,619 DEBUG SettingsFactory:282 - Second-level cache: enabled
+17:37:10,619 DEBUG SettingsFactory:288 - Query cache: disabled
+17:37:10,620 DEBUG RegionFactoryInitiator:105 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+17:37:10,623 DEBUG SettingsFactory:301 - Optimize cache for minimal puts: disabled
+17:37:10,623 DEBUG SettingsFactory:316 - Structured second-level cache entries: disabled
+17:37:10,623 DEBUG SettingsFactory:326 - Second-level cache direct-reference entries: disabled
+17:37:10,623 DEBUG SettingsFactory:332 - Automatic eviction of collection cache: disabled
+17:37:10,624 DEBUG SettingsFactory:340 - Statistics: disabled
+17:37:10,624 DEBUG SettingsFactory:346 - Deleted entity synthetic identifier rollback: disabled
+17:37:10,624 DEBUG SettingsFactory:373 - Default entity-mode: pojo
+17:37:10,624 DEBUG SettingsFactory:379 - Named query checking : enabled
+17:37:10,624 DEBUG SettingsFactory:385 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+17:37:10,625 DEBUG SettingsFactory:403 - Allow initialization of lazy state outside session : : disabled
+17:37:10,625 DEBUG SettingsFactory:413 - JTA Track by Thread: enabled
+17:37:10,633 DEBUG SessionFactoryImpl:229 - Building session factory
+17:37:10,645 DEBUG SessionFactoryImpl:285 - Session factory constructed with filter configurations : {}
+17:37:10,645 DEBUG SessionFactoryImpl:286 - Instantiating session factory with properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, c3p0.min_size=5, os.name=Windows 8.1, sun.boot.class.path=D:\program\java\jdk1.7.0_80\jre\lib\resources.jar;D:\program\java\jdk1.7.0_80\jre\lib\rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\sunrsasign.jar;D:\program\java\jdk1.7.0_80\jre\lib\jsse.jar;D:\program\java\jdk1.7.0_80\jre\lib\jce.jar;D:\program\java\jdk1.7.0_80\jre\lib\charsets.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfr.jar;D:\program\java\jdk1.7.0_80\jre\classes, sun.desktop=windows, hibernate.c3p0.max_size=20, java.vm.specification.vendor=Oracle Corporation, c3p0.max_size=20, java.runtime.version=1.7.0_80-b15, hibernate.c3p0.min_size=5, user.name=liuli, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\bin, hibernate.c3p0.timeout=120, user.language=zh, sun.boot.library.path=D:\program\java\jdk1.7.0_80\jre\bin, java.version=1.7.0_80, user.timezone=Asia/Shanghai, sun.arch.data.model=64, java.endorsed.dirs=D:\program\java\jdk1.7.0_80\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=GBK, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=51.0, user.country=CN, java.home=D:\program\java\jdk1.7.0_80\jre, java.vm.info=mixed mode, os.version=6.3, path.separator=;, c3p0.idle_test_period=3000, java.vm.version=24.80-b11, hibernate.connection.password=1qazwsxparam, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=ucr_param, user.script=, user.home=C:\Users\liuli, java.specification.vendor=Oracle Corporation, java.library.path=D:\program\java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;f:\app\liuli\product\11.2.0\client_3\bin;G:\app\liuli\product\11.2.0\client_3\bin;F:\app\liuli\product\11.2.0\client_2\bin;F:\app\liuli\product\11.2.0\client_1;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\program\java\jdk1.7.0_80\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\VanDyke Software\Clients\;D:\software\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;D:\program\Git\cmd;C:\Users\liuli\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=oracle.jdbc.OracleDriver, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.OracleDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 Test,test1, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\plugins\junit\lib\junit-rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\charsets.jar;D:\program\java\jdk1.7.0_80\jre\lib\deploy.jar;D:\program\java\jdk1.7.0_80\jre\lib\javaws.jar;D:\program\java\jdk1.7.0_80\jre\lib\jce.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfr.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfxrt.jar;D:\program\java\jdk1.7.0_80\jre\lib\jsse.jar;D:\program\java\jdk1.7.0_80\jre\lib\management-agent.jar;D:\program\java\jdk1.7.0_80\jre\lib\plugin.jar;D:\program\java\jdk1.7.0_80\jre\lib\resources.jar;D:\program\java\jdk1.7.0_80\jre\lib\rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\access-bridge-64.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\dnsns.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\jaccess.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\localedata.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunec.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunjce_provider.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunmscapi.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\zipfs.jar;F:\code\hibernate\hibernate-hello\target\test-classes;F:\code\hibernate\hibernate-hello\target\classes;F:\maven\localRepository\org\hibernate\hibernate-core\4.3.11.Final\hibernate-core-4.3.11.Final.jar;F:\maven\localRepository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;F:\maven\localRepository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;F:\maven\localRepository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;F:\maven\localRepository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;F:\maven\localRepository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;F:\maven\localRepository\org\hibernate\common\hibernate-commons-annotations\4.0.5.Final\hibernate-commons-annotations-4.0.5.Final.jar;F:\maven\localRepository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;F:\maven\localRepository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;F:\maven\localRepository\antlr\antlr\2.7.7\antlr-2.7.7.jar;F:\maven\localRepository\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar;F:\maven\localRepository\com\oracle\ojdbc14\0.0.1\ojdbc14-0.0.1.jar;F:\maven\localRepository\junit\junit\4.8.2\junit-4.8.2.jar;F:\maven\localRepository\log4j\log4j\1.2.17\log4j-1.2.17.jar;F:\maven\localRepository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;F:\maven\localRepository\org\slf4j\slf4j-log4j12\1.7.7\slf4j-log4j12-1.7.7.jar;F:\maven\localRepository\org\hibernate\hibernate-c3p0\4.3.11.Final\hibernate-c3p0-4.3.11.Final.jar;F:\maven\localRepository\com\mchange\c3p0\0.9.5.2\c3p0-0.9.5.2.jar;F:\maven\localRepository\com\mchange\mchange-commons-java\0.2.11\mchange-commons-java-0.2.11.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7536, c3p0.timeout=120, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider, sun.os.patch.level=, hibernate.connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider, java.io.tmpdir=C:\Users\liuli\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=D:\program\java\jdk1.7.0_80\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=F:\code\hibernate\hibernate-hello, hibernate.c3p0.idle_test_period=3000, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, format_sql=true, java.specification.version=1.7, hibernate.show_sql=true}
+17:37:10,667 DEBUG JaccIntegrator:90 - Skipping JACC integration as it was not enabled
+17:37:10,668 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.OracleDialect]
+17:37:10,777 DEBUG AbstractEntityPersister:3676 - Static SQL for entity: com.sunyx.domain.Emp
+17:37:10,777 DEBUG AbstractEntityPersister:3681 -  Version select: select id from t_emp where id =?
+17:37:10,777 DEBUG AbstractEntityPersister:3684 -  Snapshot select: select emp_.id, emp_.name as name2_0_, emp_.age as age3_0_, emp_.birthday as birthday4_0_, emp_.marry as marry5_0_, emp_.login as login6_0_, emp_.salary as salary7_0_ from t_emp emp_ where emp_.id=?
+17:37:10,778 DEBUG AbstractEntityPersister:3687 -  Insert 0: insert into t_emp (name, age, birthday, marry, login, salary, id) values (?, ?, ?, ?, ?, ?, ?)
+17:37:10,778 DEBUG AbstractEntityPersister:3688 -  Update 0: update t_emp set name=?, age=?, birthday=?, marry=?, login=?, salary=? where id=?
+17:37:10,778 DEBUG AbstractEntityPersister:3689 -  Delete 0: delete from t_emp where id=?
+17:37:10,801 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1dcade67]
+17:37:10,802 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,802 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,802 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,803 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,803 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,803 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,803 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,816 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,820 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,822 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [NONE]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:37:10,822 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19e59e8d]
+17:37:10,823 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,823 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,823 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,823 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,824 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,824 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,824 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,824 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,825 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,825 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [READ]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:37:10,826 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@445c4060]
+17:37:10,826 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,827 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,827 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,827 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,827 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,827 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,828 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,829 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,830 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,830 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [UPGRADE]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update
+17:37:10,832 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1aac4c22]
+17:37:10,832 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,832 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,832 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,832 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,833 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,833 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,833 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,834 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,834 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,835 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [UPGRADE_NOWAIT]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update nowait
+17:37:10,836 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6d618ddd]
+17:37:10,836 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,836 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,836 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,836 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,837 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,837 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,837 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,838 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,838 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,839 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [UPGRADE_SKIPLOCKED]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update
+17:37:10,840 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@81be240]
+17:37:10,840 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,840 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,841 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,841 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,842 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,842 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,842 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,842 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,843 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,844 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [FORCE]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update nowait
+17:37:10,844 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16138ce2]
+17:37:10,845 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,845 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,845 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,846 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,846 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,846 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,846 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,847 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,847 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,848 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [PESSIMISTIC_READ]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update
+17:37:10,848 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e263938]
+17:37:10,849 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,849 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,849 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,850 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,850 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,850 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,850 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,851 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,851 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,852 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [PESSIMISTIC_WRITE]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update
+17:37:10,853 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@63b9caa8]
+17:37:10,853 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,853 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,854 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,854 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,854 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,854 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,854 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,855 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,855 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,856 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [PESSIMISTIC_FORCE_INCREMENT]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update nowait
+17:37:10,856 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f5ffa07]
+17:37:10,857 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,857 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,858 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,858 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,858 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,858 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,858 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,859 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,859 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,860 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [OPTIMISTIC]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:37:10,861 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@18805d97]
+17:37:10,862 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:37:10,862 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:37:10,862 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:37:10,862 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:37:10,863 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:37:10,863 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:37:10,863 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:37:10,864 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:37:10,864 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:37:10,865 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [OPTIMISTIC_FORCE_INCREMENT]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:37:10,887 DEBUG Loader:56 - Static select for action ACTION_MERGE on entity com.sunyx.domain.Emp: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:37:10,888 DEBUG Loader:56 - Static select for action ACTION_REFRESH on entity com.sunyx.domain.Emp: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:37:10,890 DEBUG SessionFactoryRegistry:67 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@50086ff0
+17:37:10,892 DEBUG SessionFactoryRegistry:89 - Registering SessionFactory: d8606081-b59c-46a4-b767-c649a9239e34 (<unnamed>)
+17:37:10,892 DEBUG SessionFactoryRegistry:96 - Not binding SessionFactory to JNDI, no JNDI name configured
+17:37:10,893 DEBUG SessionFactoryImpl:505 - Instantiated session factory
+17:37:10,893 DEBUG NamedQueryRepository:155 - Checking 0 named HQL queries
+17:37:10,893 DEBUG NamedQueryRepository:171 - Checking 0 named SQL queries
+17:37:10,899 DEBUG StatisticsInitiator:110 - Statistics initialized [enabled=false]
+17:37:10,938 DEBUG AbstractTransactionImpl:160 - begin
+17:37:10,938 DEBUG LogicalConnectionImpl:226 - Obtaining JDBC connection
+17:37:10,939 DEBUG LogicalConnectionImpl:232 - Obtained JDBC connection
+17:37:10,939 DEBUG JdbcTransaction:69 - initial autocommit status: false
+17:37:10,981 DEBUG SQL:109 - 
+    select
+        emp_seq.nextval 
+    from
+        dual
+17:37:11,027 DEBUG SequenceGenerator:127 - Sequence identifier generated: BasicHolder[java.lang.Integer[13]]
+17:37:11,028 DEBUG AbstractSaveEventListener:131 - Generated identifier: 13, using strategy: org.hibernate.id.SequenceGenerator
+17:37:11,040 DEBUG AbstractTransactionImpl:175 - committing
+17:37:11,041 DEBUG AbstractFlushingEventListener:149 - Processing flush-time cascades
+17:37:11,041 DEBUG AbstractFlushingEventListener:189 - Dirty checking collections
+17:37:11,043 DEBUG AbstractFlushingEventListener:123 - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+17:37:11,043 DEBUG AbstractFlushingEventListener:130 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+17:37:11,044 DEBUG EntityPrinter:114 - Listing entities:
+17:37:11,045 DEBUG EntityPrinter:121 - com.sunyx.domain.Emp{id=13, birthday=1988-01-01, age=18, name=Tom, login=2019-01-02 17:37:10.939, salary=600.0, marry=true}
+17:37:11,050 DEBUG SQL:109 - 
+    insert 
+    into
+        t_emp
+        (name, age, birthday, marry, login, salary, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+17:37:11,065 DEBUG JdbcTransaction:113 - committed JDBC Connection
+17:37:11,066 DEBUG JdbcCoordinatorImpl:201 - HHH000420: Closing un-released batch
+17:37:11,066 DEBUG LogicalConnectionImpl:246 - Releasing JDBC connection
+17:37:11,066 DEBUG LogicalConnectionImpl:264 - Released JDBC connection
+17:38:02,625 DEBUG logging:194 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+17:38:02,657 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@76768931
+17:38:02,657 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@76768931
+17:38:02,658 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@76768931
+17:38:02,660 DEBUG BasicTypeRegistry:146 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@21b5c5b3
+17:38:02,663 DEBUG BasicTypeRegistry:146 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@bb02e3
+17:38:02,663 DEBUG BasicTypeRegistry:146 - Adding type registration yes_no -> org.hibernate.type.YesNoType@39dc25c9
+17:38:02,666 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@788370f8
+17:38:02,666 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@788370f8
+17:38:02,666 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@788370f8
+17:38:02,668 DEBUG BasicTypeRegistry:146 - Adding type registration character -> org.hibernate.type.CharacterType@7bc0bd17
+17:38:02,668 DEBUG BasicTypeRegistry:146 - Adding type registration char -> org.hibernate.type.CharacterType@7bc0bd17
+17:38:02,668 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7bc0bd17
+17:38:02,669 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@3d428308
+17:38:02,670 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@3d428308
+17:38:02,670 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3d428308
+17:38:02,672 DEBUG BasicTypeRegistry:146 - Adding type registration integer -> org.hibernate.type.IntegerType@3021eb3f
+17:38:02,673 DEBUG BasicTypeRegistry:146 - Adding type registration int -> org.hibernate.type.IntegerType@3021eb3f
+17:38:02,673 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3021eb3f
+17:38:02,675 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@59e62b84
+17:38:02,675 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@59e62b84
+17:38:02,676 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@59e62b84
+17:38:02,678 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@331efc39
+17:38:02,678 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@331efc39
+17:38:02,678 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@331efc39
+17:38:02,680 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@1c78014a
+17:38:02,680 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@1c78014a
+17:38:02,680 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1c78014a
+17:38:02,682 DEBUG BasicTypeRegistry:146 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@41942912
+17:38:02,682 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@41942912
+17:38:02,684 DEBUG BasicTypeRegistry:146 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@781d0abf
+17:38:02,684 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@781d0abf
+17:38:02,685 DEBUG BasicTypeRegistry:146 - Adding type registration string -> org.hibernate.type.StringType@31651361
+17:38:02,685 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.String -> org.hibernate.type.StringType@31651361
+17:38:02,686 DEBUG BasicTypeRegistry:146 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7bec09b0
+17:38:02,687 DEBUG BasicTypeRegistry:146 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6eb9e588
+17:38:02,688 DEBUG BasicTypeRegistry:146 - Adding type registration url -> org.hibernate.type.UrlType@13c32369
+17:38:02,688 DEBUG BasicTypeRegistry:146 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@13c32369
+17:38:02,690 DEBUG BasicTypeRegistry:146 - Adding type registration date -> org.hibernate.type.DateType@796f6496
+17:38:02,691 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@796f6496
+17:38:02,694 DEBUG BasicTypeRegistry:146 - Adding type registration time -> org.hibernate.type.TimeType@1f8dbaa6
+17:38:02,694 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1f8dbaa6
+17:38:02,697 DEBUG BasicTypeRegistry:146 - Adding type registration timestamp -> org.hibernate.type.TimestampType@5c2c48a6
+17:38:02,697 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5c2c48a6
+17:38:02,697 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5c2c48a6
+17:38:02,699 DEBUG BasicTypeRegistry:146 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@70729a2b
+17:38:02,700 DEBUG BasicTypeRegistry:146 - Adding type registration calendar -> org.hibernate.type.CalendarType@6a812a5d
+17:38:02,700 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6a812a5d
+17:38:02,700 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6a812a5d
+17:38:02,701 DEBUG BasicTypeRegistry:146 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3dc77b39
+17:38:02,703 DEBUG BasicTypeRegistry:146 - Adding type registration locale -> org.hibernate.type.LocaleType@3cb201fd
+17:38:02,703 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@3cb201fd
+17:38:02,704 DEBUG BasicTypeRegistry:146 - Adding type registration currency -> org.hibernate.type.CurrencyType@2fd6fc1b
+17:38:02,704 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2fd6fc1b
+17:38:02,705 DEBUG BasicTypeRegistry:146 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@642052de
+17:38:02,705 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@642052de
+17:38:02,706 DEBUG BasicTypeRegistry:146 - Adding type registration class -> org.hibernate.type.ClassType@61941ff4
+17:38:02,706 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@61941ff4
+17:38:02,709 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2470b02c
+17:38:02,710 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2470b02c
+17:38:02,710 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@3b5fea73
+17:38:02,711 DEBUG BasicTypeRegistry:146 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@320de756
+17:38:02,712 DEBUG BasicTypeRegistry:146 - Adding type registration binary -> org.hibernate.type.BinaryType@6eda0e76
+17:38:02,713 DEBUG BasicTypeRegistry:146 - Adding type registration byte[] -> org.hibernate.type.BinaryType@6eda0e76
+17:38:02,713 DEBUG BasicTypeRegistry:146 - Adding type registration [B -> org.hibernate.type.BinaryType@6eda0e76
+17:38:02,714 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@56811df
+17:38:02,715 DEBUG BasicTypeRegistry:146 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@56811df
+17:38:02,715 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@56811df
+17:38:02,716 DEBUG BasicTypeRegistry:146 - Adding type registration image -> org.hibernate.type.ImageType@3aa3cf94
+17:38:02,718 DEBUG BasicTypeRegistry:146 - Adding type registration characters -> org.hibernate.type.CharArrayType@52b8ed23
+17:38:02,719 DEBUG BasicTypeRegistry:146 - Adding type registration char[] -> org.hibernate.type.CharArrayType@52b8ed23
+17:38:02,719 DEBUG BasicTypeRegistry:146 - Adding type registration [C -> org.hibernate.type.CharArrayType@52b8ed23
+17:38:02,721 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@47a39fdc
+17:38:02,722 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@47a39fdc
+17:38:02,722 DEBUG BasicTypeRegistry:146 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@47a39fdc
+17:38:02,724 DEBUG BasicTypeRegistry:146 - Adding type registration text -> org.hibernate.type.TextType@a9c6fd8
+17:38:02,726 DEBUG BasicTypeRegistry:146 - Adding type registration ntext -> org.hibernate.type.NTextType@3b180cbd
+17:38:02,732 DEBUG BasicTypeRegistry:146 - Adding type registration blob -> org.hibernate.type.BlobType@65596e13
+17:38:02,732 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@65596e13
+17:38:02,733 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@38bb5aa9
+17:38:02,738 DEBUG BasicTypeRegistry:146 - Adding type registration clob -> org.hibernate.type.ClobType@7d7c88d4
+17:38:02,738 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@7d7c88d4
+17:38:02,744 DEBUG BasicTypeRegistry:146 - Adding type registration nclob -> org.hibernate.type.NClobType@2605d6a3
+17:38:02,744 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2605d6a3
+17:38:02,745 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@70da628b
+17:38:02,745 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@70124154
+17:38:02,746 DEBUG BasicTypeRegistry:146 - Adding type registration serializable -> org.hibernate.type.SerializableType@52402386
+17:38:02,750 DEBUG BasicTypeRegistry:146 - Adding type registration object -> org.hibernate.type.ObjectType@746ab811
+17:38:02,750 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@746ab811
+17:38:02,751 DEBUG BasicTypeRegistry:146 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6dae04e2
+17:38:02,751 DEBUG BasicTypeRegistry:146 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3bc2c9af
+17:38:02,751 DEBUG BasicTypeRegistry:146 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@71471ecf
+17:38:02,752 DEBUG BasicTypeRegistry:146 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7437e222
+17:38:02,752 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@df61ca
+17:38:02,752 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@498d1538
+17:38:02,753 DEBUG BasicTypeRegistry:146 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4d6c3541
+17:38:02,753 DEBUG BasicTypeRegistry:146 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@7b1c661c
+17:38:02,775  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+17:38:02,786  INFO Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+17:38:02,790  INFO Environment:224 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.username=ucr_param, hibernate.connection.password=****, format_sql=true, hibernate.dialect=org.hibernate.dialect.OracleDialect, hibernate.connection.url=jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, show_sql=true, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=oracle.jdbc.OracleDriver}
+17:38:02,791  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+17:38:02,812 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+17:38:02,813 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+17:38:02,814 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+17:38:02,814 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+17:38:02,815 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+17:38:02,816 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+17:38:02,818 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+17:38:02,819 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+17:38:02,819 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+17:38:02,820 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+17:38:02,821 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+17:38:02,821 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+17:38:02,822 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+17:38:02,822 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+17:38:02,823 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+17:38:02,828  INFO Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+17:38:02,828  INFO Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+17:38:02,879 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+17:38:02,880 DEBUG DTDEntityResolver:71 - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+17:38:02,881 DEBUG DTDEntityResolver:108 - Located [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd] in classpath
+17:38:02,912 DEBUG Configuration:2037 - hibernate.connection.driver_class=oracle.jdbc.OracleDriver
+17:38:02,912 DEBUG Configuration:2037 - hibernate.connection.url=jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1
+17:38:02,912 DEBUG Configuration:2037 - hibernate.connection.username=ucr_param
+17:38:02,912 DEBUG Configuration:2037 - hibernate.connection.password=1qazwsxparam
+17:38:02,913 DEBUG Configuration:2037 - connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider
+17:38:02,913 DEBUG Configuration:2037 - c3p0.max_size=20
+17:38:02,913 DEBUG Configuration:2037 - c3p0.min_size=5
+17:38:02,913 DEBUG Configuration:2037 - c3p0.timeout=120
+17:38:02,913 DEBUG Configuration:2037 - c3p0.idle_test_period=3000
+17:38:02,913 DEBUG Configuration:2037 - hibernate.dialect=org.hibernate.dialect.OracleDialect
+17:38:02,914 DEBUG Configuration:2037 - show_sql=true
+17:38:02,914 DEBUG Configuration:2037 - format_sql=true
+17:38:02,914 DEBUG Configuration:2256 - Session-factory config [null] named resource [com/sunyx/domain/Emp.hbm.xml] for mapping
+17:38:02,915  INFO Configuration:759 - HHH000221: Reading mappings from resource: com/sunyx/domain/Emp.hbm.xml
+17:38:02,945 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+17:38:02,945 DEBUG DTDEntityResolver:71 - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+17:38:02,946 DEBUG DTDEntityResolver:108 - Located [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd] in classpath
+17:38:02,980  INFO Configuration:2216 - HHH000041: Configured SessionFactory: null
+17:38:02,980 DEBUG Configuration:2217 - Properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, c3p0.min_size=5, os.name=Windows 8.1, sun.boot.class.path=D:\program\java\jdk1.7.0_80\jre\lib\resources.jar;D:\program\java\jdk1.7.0_80\jre\lib\rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\sunrsasign.jar;D:\program\java\jdk1.7.0_80\jre\lib\jsse.jar;D:\program\java\jdk1.7.0_80\jre\lib\jce.jar;D:\program\java\jdk1.7.0_80\jre\lib\charsets.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfr.jar;D:\program\java\jdk1.7.0_80\jre\classes, sun.desktop=windows, hibernate.c3p0.max_size=20, java.vm.specification.vendor=Oracle Corporation, c3p0.max_size=20, java.runtime.version=1.7.0_80-b15, hibernate.c3p0.min_size=5, user.name=liuli, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\bin, hibernate.c3p0.timeout=120, user.language=zh, sun.boot.library.path=D:\program\java\jdk1.7.0_80\jre\bin, java.version=1.7.0_80, user.timezone=Asia/Shanghai, sun.arch.data.model=64, java.endorsed.dirs=D:\program\java\jdk1.7.0_80\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=GBK, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=51.0, user.country=CN, java.home=D:\program\java\jdk1.7.0_80\jre, java.vm.info=mixed mode, os.version=6.3, c3p0.idle_test_period=3000, path.separator=;, java.vm.version=24.80-b11, hibernate.connection.password=1qazwsxparam, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=ucr_param, user.script=, user.home=C:\Users\liuli, java.specification.vendor=Oracle Corporation, java.library.path=D:\program\java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;f:\app\liuli\product\11.2.0\client_3\bin;G:\app\liuli\product\11.2.0\client_3\bin;F:\app\liuli\product\11.2.0\client_2\bin;F:\app\liuli\product\11.2.0\client_1;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\program\java\jdk1.7.0_80\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\VanDyke Software\Clients\;D:\software\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;D:\program\Git\cmd;C:\Users\liuli\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=oracle.jdbc.OracleDriver, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.OracleDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 Test,test1, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\plugins\junit\lib\junit-rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\charsets.jar;D:\program\java\jdk1.7.0_80\jre\lib\deploy.jar;D:\program\java\jdk1.7.0_80\jre\lib\javaws.jar;D:\program\java\jdk1.7.0_80\jre\lib\jce.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfr.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfxrt.jar;D:\program\java\jdk1.7.0_80\jre\lib\jsse.jar;D:\program\java\jdk1.7.0_80\jre\lib\management-agent.jar;D:\program\java\jdk1.7.0_80\jre\lib\plugin.jar;D:\program\java\jdk1.7.0_80\jre\lib\resources.jar;D:\program\java\jdk1.7.0_80\jre\lib\rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\access-bridge-64.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\dnsns.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\jaccess.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\localedata.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunec.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunjce_provider.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunmscapi.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\zipfs.jar;F:\code\hibernate\hibernate-hello\target\test-classes;F:\code\hibernate\hibernate-hello\target\classes;F:\maven\localRepository\org\hibernate\hibernate-core\4.3.11.Final\hibernate-core-4.3.11.Final.jar;F:\maven\localRepository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;F:\maven\localRepository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;F:\maven\localRepository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;F:\maven\localRepository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;F:\maven\localRepository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;F:\maven\localRepository\org\hibernate\common\hibernate-commons-annotations\4.0.5.Final\hibernate-commons-annotations-4.0.5.Final.jar;F:\maven\localRepository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;F:\maven\localRepository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;F:\maven\localRepository\antlr\antlr\2.7.7\antlr-2.7.7.jar;F:\maven\localRepository\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar;F:\maven\localRepository\com\oracle\ojdbc14\0.0.1\ojdbc14-0.0.1.jar;F:\maven\localRepository\junit\junit\4.8.2\junit-4.8.2.jar;F:\maven\localRepository\log4j\log4j\1.2.17\log4j-1.2.17.jar;F:\maven\localRepository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;F:\maven\localRepository\org\slf4j\slf4j-log4j12\1.7.7\slf4j-log4j12-1.7.7.jar;F:\maven\localRepository\org\hibernate\hibernate-c3p0\4.3.11.Final\hibernate-c3p0-4.3.11.Final.jar;F:\maven\localRepository\com\mchange\c3p0\0.9.5.2\c3p0-0.9.5.2.jar;F:\maven\localRepository\com\mchange\mchange-commons-java\0.2.11\mchange-commons-java-0.2.11.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7537, c3p0.timeout=120, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider, sun.os.patch.level=, hibernate.connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider, java.io.tmpdir=C:\Users\liuli\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=D:\program\java\jdk1.7.0_80\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=F:\code\hibernate\hibernate-hello, hibernate.c3p0.idle_test_period=3000, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, format_sql=true, java.specification.version=1.7, hibernate.show_sql=true}
+17:38:02,997 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+17:38:03,000 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+17:38:03,002 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+17:38:03,018 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+17:38:03,019 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+17:38:03,077 DEBUG ServiceBinding:85 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+17:38:03,077 DEBUG Configuration:1843 - Preparing to build session factory with filters : {}
+17:38:03,083  INFO ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.c3p0.internal.C3P0ConnectionProvider
+17:38:03,096  INFO C3P0ConnectionProvider:134 - HHH010002: C3P0 using driver: oracle.jdbc.OracleDriver at URL: jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1
+17:38:03,097  INFO C3P0ConnectionProvider:135 - HHH000046: Connection properties: {user=ucr_param, password=****}
+17:38:03,097  INFO C3P0ConnectionProvider:138 - HHH000006: Autocommit mode: false
+17:38:03,137  INFO MLog:212 - MLog clients using slf4j logging.
+17:38:03,149 DEBUG MLog:207 - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+17:38:03,149 DEBUG MLog:207 - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+17:38:03,149 DEBUG MLog:207 - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+17:38:03,149 DEBUG MLog:207 - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+17:38:03,149 DEBUG MLog:207 - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+17:38:03,154 DEBUG MConfig:207 - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+17:38:03,155 DEBUG MConfig:207 - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+17:38:03,155 DEBUG MConfig:207 - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+17:38:03,155 DEBUG MConfig:207 - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+17:38:03,372  INFO C3P0Registry:212 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+17:38:03,395 DEBUG DynamicPooledDataSourceManagerMBean:204 - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=2xhtt2a03v42lw1mtg15b|7f79e06,name=2xhtt2a03v42lw1mtg15b|7f79e06 registered.
+17:38:03,421 DEBUG DynamicPooledDataSourceManagerMBean:204 - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=2xhtt2a03v42lw1mtg15b|7f79e06,name=2xhtt2a03v42lw1mtg15b|7f79e06 unregistered, in order to be reregistered after update.
+17:38:03,421 DEBUG DynamicPooledDataSourceManagerMBean:204 - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=2xhtt2a03v42lw1mtg15b|7f79e06,name=2xhtt2a03v42lw1mtg15b|7f79e06 registered.
+17:38:03,465  INFO AbstractPoolBackedDataSource:212 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@6522049d [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@3abf2027 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 2xhtt2a03v42lw1mtg15b|3e0e4be, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@7c5591ec [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 2xhtt2a03v42lw1mtg15b|65c49b79, jdbcUrl -> jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 2xhtt2a03v42lw1mtg15b|7f79e06, numHelperThreads -> 3 ]
+17:38:03,486 DEBUG MConfig:207 - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+17:38:03,486 DEBUG MConfig:207 - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+17:38:03,486 DEBUG MConfig:207 - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+17:38:03,486 DEBUG MConfig:207 - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+17:38:03,488 DEBUG BasicResourcePool:204 - com.mchange.v2.resourcepool.BasicResourcePool@6e704a0 config: [start -> 5; min -> 5; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 3000000; max_resource_age -> 0; max_idle_time -> 120000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 30000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+17:38:03,488 DEBUG C3P0PooledConnectionPoolManager:204 - Created new pool for auth, username (masked): 'uc******'.
+17:38:03,488 DEBUG BasicResourcePool:204 - acquire test -- pool size: 0; target_pool_size: 5; desired target? 1
+17:38:03,489 DEBUG BasicResourcePool:204 - awaitAvailable(): [unknown]
+17:38:03,744 DEBUG JdbcServicesImpl:128 - Database ->
+       name : Oracle
+    version : Oracle Database 11g Release 11.1.0.0.0 - Production
+      major : 11
+      minor : 1
+17:38:03,744 DEBUG JdbcServicesImpl:139 - Driver ->
+       name : Oracle JDBC driver
+    version : 10.2.0.1.0
+      major : 10
+      minor : 2
+17:38:03,744 DEBUG JdbcServicesImpl:150 - JDBC version : 10.2
+17:38:03,745 DEBUG StandardRefCursorSupport:187 - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+17:38:03,832  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+17:38:03,837  WARN Oracle9Dialect:70 - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+17:38:03,838  WARN OracleDialect:56 - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+17:38:03,841  INFO LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:38:03,870 DEBUG Configuration:3805 - Processing hbm.xml files
+17:38:03,882 DEBUG HbmBinder:355 - Mapping class: com.sunyx.domain.Emp -> t_emp
+17:38:03,890 DEBUG HbmBinder:1374 - Mapped property: id -> id
+17:38:03,895 DEBUG HbmBinder:1374 - Mapped property: name -> name
+17:38:03,895 DEBUG HbmBinder:1374 - Mapped property: age -> age
+17:38:03,895 DEBUG HbmBinder:1374 - Mapped property: birthday -> birthday
+17:38:03,895 DEBUG HbmBinder:1374 - Mapped property: marry -> marry
+17:38:03,895 DEBUG HbmBinder:1374 - Mapped property: login -> login
+17:38:03,896 DEBUG HbmBinder:1374 - Mapped property: salary -> salary
+17:38:03,896 DEBUG Configuration:3835 - Process annotated classes
+17:38:03,897 DEBUG Configuration:1484 - Processing fk mappings (*ToOne and JoinedSubclass)
+17:38:03,897 DEBUG Configuration:1689 - Processing extends queue
+17:38:03,897 DEBUG Configuration:1747 - Processing extends queue
+17:38:03,898 DEBUG Configuration:1692 - Processing collection mappings
+17:38:03,898 DEBUG Configuration:1702 - Processing native query and ResultSetMapping mappings
+17:38:03,898 DEBUG Configuration:1710 - Processing association property references
+17:38:03,898 DEBUG Configuration:1732 - Creating tables' unique integer identifiers
+17:38:03,898 DEBUG Configuration:1733 - Processing foreign key constraints
+17:38:03,899 DEBUG JtaPlatformInitiator:59 - No JtaPlatform was specified, checking resolver
+17:38:03,900 DEBUG JtaPlatformResolverInitiator:50 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+17:38:03,903 DEBUG StandardJtaPlatformResolver:118 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:38:03,906 DEBUG SettingsFactory:122 - Automatic flush during beforeCompletion(): disabled
+17:38:03,907 DEBUG SettingsFactory:128 - Automatic session close at end of transaction: disabled
+17:38:03,907 DEBUG SettingsFactory:139 - JDBC batch size: 15
+17:38:03,907 DEBUG SettingsFactory:145 - JDBC batch updates for versioned data: disabled
+17:38:03,907 DEBUG SettingsFactory:155 - Scrollable result sets: enabled
+17:38:03,907 DEBUG SettingsFactory:161 - Wrap result sets: disabled
+17:38:03,907 DEBUG SettingsFactory:167 - JDBC3 getGeneratedKeys(): disabled
+17:38:03,908 DEBUG SettingsFactory:179 - multi-tenancy strategy : NONE
+17:38:03,908 DEBUG SettingsFactory:185 - Connection release mode: auto
+17:38:03,908  INFO TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+17:38:03,912 DEBUG SettingsFactory:207 - Using BatchFetchStyle : LEGACY
+17:38:03,912 DEBUG SettingsFactory:232 - Default batch fetch size: 1
+17:38:03,912 DEBUG SettingsFactory:238 - Generate SQL with comments: disabled
+17:38:03,912 DEBUG SettingsFactory:244 - Order SQL updates by primary key: disabled
+17:38:03,912 DEBUG SettingsFactory:250 - Order SQL inserts for batching: disabled
+17:38:03,912 DEBUG SettingsFactory:258 - Default null ordering: none
+17:38:03,913 DEBUG SettingsFactory:501 - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+17:38:03,914  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+17:38:03,914 DEBUG SettingsFactory:268 - Query language substitutions: {}
+17:38:03,915 DEBUG SettingsFactory:274 - JPA-QL strict compliance: disabled
+17:38:03,915 DEBUG SettingsFactory:282 - Second-level cache: enabled
+17:38:03,915 DEBUG SettingsFactory:288 - Query cache: disabled
+17:38:03,915 DEBUG RegionFactoryInitiator:105 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+17:38:03,918 DEBUG SettingsFactory:301 - Optimize cache for minimal puts: disabled
+17:38:03,918 DEBUG SettingsFactory:316 - Structured second-level cache entries: disabled
+17:38:03,918 DEBUG SettingsFactory:326 - Second-level cache direct-reference entries: disabled
+17:38:03,918 DEBUG SettingsFactory:332 - Automatic eviction of collection cache: disabled
+17:38:03,918 DEBUG SettingsFactory:340 - Statistics: disabled
+17:38:03,918 DEBUG SettingsFactory:346 - Deleted entity synthetic identifier rollback: disabled
+17:38:03,918 DEBUG SettingsFactory:373 - Default entity-mode: pojo
+17:38:03,919 DEBUG SettingsFactory:379 - Named query checking : enabled
+17:38:03,919 DEBUG SettingsFactory:385 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+17:38:03,919 DEBUG SettingsFactory:403 - Allow initialization of lazy state outside session : : disabled
+17:38:03,919 DEBUG SettingsFactory:413 - JTA Track by Thread: enabled
+17:38:03,927 DEBUG SessionFactoryImpl:229 - Building session factory
+17:38:03,936 DEBUG SessionFactoryImpl:285 - Session factory constructed with filter configurations : {}
+17:38:03,936 DEBUG SessionFactoryImpl:286 - Instantiating session factory with properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:oracle:thin:@//10.143.24.36:1521/ACTTEST1, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, c3p0.min_size=5, os.name=Windows 8.1, sun.boot.class.path=D:\program\java\jdk1.7.0_80\jre\lib\resources.jar;D:\program\java\jdk1.7.0_80\jre\lib\rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\sunrsasign.jar;D:\program\java\jdk1.7.0_80\jre\lib\jsse.jar;D:\program\java\jdk1.7.0_80\jre\lib\jce.jar;D:\program\java\jdk1.7.0_80\jre\lib\charsets.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfr.jar;D:\program\java\jdk1.7.0_80\jre\classes, sun.desktop=windows, hibernate.c3p0.max_size=20, java.vm.specification.vendor=Oracle Corporation, c3p0.max_size=20, java.runtime.version=1.7.0_80-b15, hibernate.c3p0.min_size=5, user.name=liuli, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\bin, hibernate.c3p0.timeout=120, user.language=zh, sun.boot.library.path=D:\program\java\jdk1.7.0_80\jre\bin, java.version=1.7.0_80, user.timezone=Asia/Shanghai, sun.arch.data.model=64, java.endorsed.dirs=D:\program\java\jdk1.7.0_80\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=GBK, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=51.0, user.country=CN, java.home=D:\program\java\jdk1.7.0_80\jre, java.vm.info=mixed mode, os.version=6.3, path.separator=;, c3p0.idle_test_period=3000, java.vm.version=24.80-b11, hibernate.connection.password=1qazwsxparam, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=ucr_param, user.script=, user.home=C:\Users\liuli, java.specification.vendor=Oracle Corporation, java.library.path=D:\program\java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;f:\app\liuli\product\11.2.0\client_3\bin;G:\app\liuli\product\11.2.0\client_3\bin;F:\app\liuli\product\11.2.0\client_2\bin;F:\app\liuli\product\11.2.0\client_1;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\program\java\jdk1.7.0_80\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\VanDyke Software\Clients\;D:\software\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;D:\program\Git\cmd;C:\Users\liuli\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=oracle.jdbc.OracleDriver, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.OracleDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 Test,test1, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.7\plugins\junit\lib\junit-rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\charsets.jar;D:\program\java\jdk1.7.0_80\jre\lib\deploy.jar;D:\program\java\jdk1.7.0_80\jre\lib\javaws.jar;D:\program\java\jdk1.7.0_80\jre\lib\jce.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfr.jar;D:\program\java\jdk1.7.0_80\jre\lib\jfxrt.jar;D:\program\java\jdk1.7.0_80\jre\lib\jsse.jar;D:\program\java\jdk1.7.0_80\jre\lib\management-agent.jar;D:\program\java\jdk1.7.0_80\jre\lib\plugin.jar;D:\program\java\jdk1.7.0_80\jre\lib\resources.jar;D:\program\java\jdk1.7.0_80\jre\lib\rt.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\access-bridge-64.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\dnsns.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\jaccess.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\localedata.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunec.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunjce_provider.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\sunmscapi.jar;D:\program\java\jdk1.7.0_80\jre\lib\ext\zipfs.jar;F:\code\hibernate\hibernate-hello\target\test-classes;F:\code\hibernate\hibernate-hello\target\classes;F:\maven\localRepository\org\hibernate\hibernate-core\4.3.11.Final\hibernate-core-4.3.11.Final.jar;F:\maven\localRepository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;F:\maven\localRepository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;F:\maven\localRepository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;F:\maven\localRepository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;F:\maven\localRepository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;F:\maven\localRepository\org\hibernate\common\hibernate-commons-annotations\4.0.5.Final\hibernate-commons-annotations-4.0.5.Final.jar;F:\maven\localRepository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;F:\maven\localRepository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;F:\maven\localRepository\antlr\antlr\2.7.7\antlr-2.7.7.jar;F:\maven\localRepository\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar;F:\maven\localRepository\com\oracle\ojdbc14\0.0.1\ojdbc14-0.0.1.jar;F:\maven\localRepository\junit\junit\4.8.2\junit-4.8.2.jar;F:\maven\localRepository\log4j\log4j\1.2.17\log4j-1.2.17.jar;F:\maven\localRepository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;F:\maven\localRepository\org\slf4j\slf4j-log4j12\1.7.7\slf4j-log4j12-1.7.7.jar;F:\maven\localRepository\org\hibernate\hibernate-c3p0\4.3.11.Final\hibernate-c3p0-4.3.11.Final.jar;F:\maven\localRepository\com\mchange\c3p0\0.9.5.2\c3p0-0.9.5.2.jar;F:\maven\localRepository\com\mchange\mchange-commons-java\0.2.11\mchange-commons-java-0.2.11.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7537, c3p0.timeout=120, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider, sun.os.patch.level=, hibernate.connection.provider_class=org.hibernate.c3p0.internal.C3P0ConnectionProvider, java.io.tmpdir=C:\Users\liuli\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=D:\program\java\jdk1.7.0_80\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=F:\code\hibernate\hibernate-hello, hibernate.c3p0.idle_test_period=3000, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, format_sql=true, java.specification.version=1.7, hibernate.show_sql=true}
+17:38:03,947 DEBUG JaccIntegrator:90 - Skipping JACC integration as it was not enabled
+17:38:03,947 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.OracleDialect]
+17:38:04,052 DEBUG AbstractEntityPersister:3676 - Static SQL for entity: com.sunyx.domain.Emp
+17:38:04,053 DEBUG AbstractEntityPersister:3681 -  Version select: select id from t_emp where id =?
+17:38:04,053 DEBUG AbstractEntityPersister:3684 -  Snapshot select: select emp_.id, emp_.name as name2_0_, emp_.age as age3_0_, emp_.birthday as birthday4_0_, emp_.marry as marry5_0_, emp_.login as login6_0_, emp_.salary as salary7_0_ from t_emp emp_ where emp_.id=?
+17:38:04,053 DEBUG AbstractEntityPersister:3687 -  Insert 0: insert into t_emp (name, age, birthday, marry, login, salary, id) values (?, ?, ?, ?, ?, ?, ?)
+17:38:04,053 DEBUG AbstractEntityPersister:3688 -  Update 0: update t_emp set name=?, age=?, birthday=?, marry=?, login=?, salary=? where id=?
+17:38:04,053 DEBUG AbstractEntityPersister:3689 -  Delete 0: delete from t_emp where id=?
+17:38:04,078 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@345c9320]
+17:38:04,079 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,080 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,080 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,080 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,080 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,080 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,080 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,094 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,098 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,099 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [NONE]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:38:04,100 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@8aa1c8]
+17:38:04,100 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,100 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,100 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,100 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,100 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,100 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,100 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,100 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,101 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,101 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [READ]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:38:04,101 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@286bd987]
+17:38:04,101 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,101 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,102 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,102 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,102 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,102 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,102 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,102 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,102 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,103 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [UPGRADE]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update
+17:38:04,103 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@48fb8034]
+17:38:04,103 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,103 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,103 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,103 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,103 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,103 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,103 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,103 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,104 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,104 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [UPGRADE_NOWAIT]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update nowait
+17:38:04,104 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@24e10f10]
+17:38:04,104 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,104 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,104 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,104 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,104 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,105 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,105 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,105 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,105 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,105 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [UPGRADE_SKIPLOCKED]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update
+17:38:04,106 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5182a932]
+17:38:04,106 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,106 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,106 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,106 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,106 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,106 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,106 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,107 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,107 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,107 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [FORCE]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update nowait
+17:38:04,108 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@70db5d33]
+17:38:04,108 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,108 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,108 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,108 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,108 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,108 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,108 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,109 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,109 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,109 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [PESSIMISTIC_READ]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update
+17:38:04,110 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@191a9961]
+17:38:04,110 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,110 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,110 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,110 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,110 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,110 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,110 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,110 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,111 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,111 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [PESSIMISTIC_WRITE]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update
+17:38:04,111 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@732db584]
+17:38:04,111 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,111 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,111 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,111 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,111 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,112 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,112 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,112 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,112 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,112 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [PESSIMISTIC_FORCE_INCREMENT]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=? for update nowait
+17:38:04,113 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@54a64569]
+17:38:04,113 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,113 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,113 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,113 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,113 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,113 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,113 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,113 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,114 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,114 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [OPTIMISTIC]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:38:04,114 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7d29977c]
+17:38:04,114 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : name
+17:38:04,114 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : age
+17:38:04,114 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : birthday
+17:38:04,114 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : marry
+17:38:04,114 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : login
+17:38:04,114 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : salary
+17:38:04,114 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+17:38:04,115 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+17:38:04,115 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.sunyx.domain.Emp)
+    - Returns
+       - EntityReturnImpl(entity=com.sunyx.domain.Emp, querySpaceUid=<gen:0>, path=com.sunyx.domain.Emp)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.sunyx.domain.Emp)
+          - SQL table alias mapping - emp0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+17:38:04,115 DEBUG EntityLoader:146 - Static select for entity com.sunyx.domain.Emp [OPTIMISTIC_FORCE_INCREMENT]: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:38:04,131 DEBUG Loader:56 - Static select for action ACTION_MERGE on entity com.sunyx.domain.Emp: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:38:04,131 DEBUG Loader:56 - Static select for action ACTION_REFRESH on entity com.sunyx.domain.Emp: select emp0_.id as id1_0_0_, emp0_.name as name2_0_0_, emp0_.age as age3_0_0_, emp0_.birthday as birthday4_0_0_, emp0_.marry as marry5_0_0_, emp0_.login as login6_0_0_, emp0_.salary as salary7_0_0_ from t_emp emp0_ where emp0_.id=?
+17:38:04,133 DEBUG SessionFactoryRegistry:67 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@4f5f9775
+17:38:04,134 DEBUG SessionFactoryRegistry:89 - Registering SessionFactory: 4f08fe37-b4bf-4067-851b-766e006704ad (<unnamed>)
+17:38:04,134 DEBUG SessionFactoryRegistry:96 - Not binding SessionFactory to JNDI, no JNDI name configured
+17:38:04,134 DEBUG SessionFactoryImpl:505 - Instantiated session factory
+17:38:04,135 DEBUG NamedQueryRepository:155 - Checking 0 named HQL queries
+17:38:04,135 DEBUG NamedQueryRepository:171 - Checking 0 named SQL queries
+17:38:04,140 DEBUG StatisticsInitiator:110 - Statistics initialized [enabled=false]
+17:38:04,188 DEBUG AbstractTransactionImpl:160 - begin
+17:38:04,189 DEBUG LogicalConnectionImpl:226 - Obtaining JDBC connection
+17:38:04,189 DEBUG LogicalConnectionImpl:232 - Obtained JDBC connection
+17:38:04,189 DEBUG JdbcTransaction:69 - initial autocommit status: false
+17:38:04,228 DEBUG SQL:109 - 
+    select
+        emp_seq.nextval 
+    from
+        dual
+17:38:04,281 DEBUG SequenceGenerator:127 - Sequence identifier generated: BasicHolder[java.lang.Integer[14]]
+17:38:04,281 DEBUG AbstractSaveEventListener:131 - Generated identifier: 14, using strategy: org.hibernate.id.SequenceGenerator
+17:38:04,293 DEBUG AbstractTransactionImpl:175 - committing
+17:38:04,293 DEBUG AbstractFlushingEventListener:149 - Processing flush-time cascades
+17:38:04,294 DEBUG AbstractFlushingEventListener:189 - Dirty checking collections
+17:38:04,295 DEBUG AbstractFlushingEventListener:123 - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+17:38:04,296 DEBUG AbstractFlushingEventListener:130 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+17:38:04,296 DEBUG EntityPrinter:114 - Listing entities:
+17:38:04,297 DEBUG EntityPrinter:121 - com.sunyx.domain.Emp{id=14, birthday=1988-01-01, age=18, name=Tom, login=2019-01-02 17:38:04.19, salary=600.0, marry=true}
+17:38:04,302 DEBUG SQL:109 - 
+    insert 
+    into
+        t_emp
+        (name, age, birthday, marry, login, salary, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+17:38:04,314 DEBUG JdbcTransaction:113 - committed JDBC Connection
+17:38:04,314 DEBUG JdbcCoordinatorImpl:201 - HHH000420: Closing un-released batch
+17:38:04,314 DEBUG LogicalConnectionImpl:246 - Releasing JDBC connection
+17:38:04,315 DEBUG LogicalConnectionImpl:264 - Released JDBC connection
